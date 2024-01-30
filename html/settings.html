@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>Area Personale - TPsit.com</title>
+        <meta name="author" content="Nicola Bernardi">
+        <meta name="description" content="Area personale">
+        <link rel="stylesheet" href="../css/main.css">
+        <script src="../js/main.js"></script>
+        <script src="../js/personal.js"></script>
+        <style id="stile">
+            
+        </style>
+    </head>
+    <body onload="">
+        <div id="circle">
+            <p id="giga">?</p>
+        </div>
+        <h1>
+            TPsit-com - Area Personale
+        </h1>
+        <p class="saluti">Benvenuto <span id="ciaino">-</span></p>
+        <section>
+            <article id="profpict">
+                <h4>Cambia immagine del profilo</h4>
+                <input type="radio" id="happy" name="avatar" onclick="changeAvatar('happy')">
+                <label for="happy">😀</label>
+                <input type="radio" id="moneyman" name="avatar" onclick="changeAvatar('moneyman')">
+                <label for="moneyman">🤑</label>
+                <input type="radio" id="police" name="avatar" onclick="changeAvatar('police')">
+                <label for="police">👮🏻</label>
+                <input type="radio" id="snake" name="avatar" onclick="changeAvatar('snake')">
+                <label for="snake">🐍</label>
+                <input type="radio" id="lion" name="avatar" onclick="changeAvatar('lion')">
+                <label for="lion">🦁</label>
+            </article>
+            <article id="temas">
+                    <input type="checkbox" id="scuro">
+                    <label for="scuro" onclick="">Tema scuro</label>
+            </article>
+            <button onclick="tem()">Apply theme</button>
+            <article>
+                <h4>In questo sito sei un <span id="rang">--</span></h4>
+            </article>
+            <button onclick="slogga()">Logout</button>
+            <button onclick="location.href = '../'">Home</button>
+        </section>
+        
+    </body>
+</html>

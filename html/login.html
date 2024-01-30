@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>Login - TPsit.com</title>
+        <meta name="author" content="Nicola Bernardi">
+        <meta name="description" content="login">
+        <link rel="stylesheet" href="../css/main.css">
+        <script src="../js/main.js"></script>
+        <style id="stile">
+            *{
+                background-color: #052134;
+                color:white;
+            }
+        </style>
+    </head>
+    <body onload="main()">
+        <h1>
+            TPsit-com - Login
+        </h1>
+        <h4 id="logged"></h4>
+        <p>Esegui l'accesso per usufruire di maggiori funzionalità</p>
+        <section id="login">
+
+                <label for="usr">Username: </label>
+                <input type="text" id="usr">
+                <label for="pass">Password: </label>
+                <input type="password" id="pass">
+                <button onclick="logg()">Accedi</button>
+                <h3 id="err"></h3>
+                <button onclick="location.href = 'sign.html'">Sign-in</button>
+                <article id="postlogin">
+                </article>
+        </section>
+        <button onclick="location.href = '../'">Home</button>
+    </body>
+</html>

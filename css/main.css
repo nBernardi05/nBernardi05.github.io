@@ -1,0 +1,108 @@
+* {
+	font-family: Helvetica, Arial;
+	text-align:center;
+
+}
+#circle{
+	border: solid;
+	border-radius: 100px;
+	border-color:red;
+	float: left;
+}
+input{
+	border-radius: 10px; border:solid; border-color:blue;
+	background-color:white;
+	color:black;
+}
+button {
+	border-radius:5px; 
+}
+input:hover{
+	border-color:red; border-radius:30px;
+}
+h1{
+	text-align:center;
+}
+#giga {
+	font-size: 100px;
+	float: left;
+	margin: 0;
+}
+.saluti{
+	font-size: 30px;
+}
+#rang{
+	color:red;
+}
+button{
+	border:solid;
+	border-color:red;
+	border-radius:30px;
+	background-color: white;
+	font-size:15px;
+	color:black;
+	font-weight: 1000;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	margin-top: 10px;
+}
+button:hover{
+	border:solid;
+	border-color:firebrick;
+	border-radius:20px;
+	background-color: white;
+
+}
+h1{
+	color:red;
+}
+
+#foo::before{
+	content: '© Nicola Bernardi - ';
+}
+.ver{
+	width: 20px;
+}
+.unam{
+	font-style: italic;
+	font-weight: 500;
+}
+.post{
+	text-align: left;
+	display: inline-block;
+	padding:5px;
+	border: solid lightskyblue;
+	border-radius: 15px;
+	margin:5px;
+	width: 40%;
+}
+.whopost{
+	font-size: larger;
+	font-weight: 1000;
+	display: inline;
+}
+.profile{
+	display: inline;
+	font-size:xx-large;
+	border-radius: 30px; border:solid lightblue; border-width: 2px;
+}
+#ranEr{
+	font-size:medium;
+	font-weight: 400;
+	color:red;
+}
+.ran{
+	font-size:medium;
+	font-weight: 400;
+	color:red;
+}
+.navv{
+	border:solid red;
+	border-radius: 20px;
+	width: 33%;
+	background-color:unset;
+	color:green;
+}
+.hashtag{
+	color:cyan;
+	font-style: italic;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>TPsit.com</title>
+        <meta name="author" content="Nicola Bernardi">
+        <meta name="description" content="prova">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/main.js"></script>
+        <script src="js/altro.js"></script>
+        <style id="stile">
+            .hid {
+                display: none;
+            }
+            *{
+                background-color: #052134;
+                color:white;
+            }
+        </style>
+    </head>
+    <body onload="main()">
+        <h1>
+            TPsit-com
+        </h1>
+        <section>
+            <h2>Benvenuto <span id="usrlogged"></span></h2>
+            <nav>
+                <button class="navv" onclick="location.href = 'html/login.html'">Login</button>
+                <button class="navv" onclick="location.href = 'html/sign.html'">Sign-in</button>
+                <button class="navv" onclick="slogga()">Logout</button>
+            </nav>
+            <article>
+                
+            </article>
+        </section>
+        <section style="padding: 9px;">
+            <article class="post">
+                <p class="profile">👮🏻</p>
+                <p class="whopost">Emanuele Rizzolo <span class="unam">@erizzolo</span> <img src="images/verificato.png" class="ver" alt="ver"> <span id="ranEr">mod</span> 2h</p>
+                <p class="postbody">All'inferno c'è un girone interamente dedicato a chi usa i tag &#60;br>! <span class="hashtag">#C'ÈUNLIMITEATUTTO #ABOLIAMOILTAGBR</span></p>
+                <div><p><span id="brLik" onclick="brLike()">&#9825; 8400</span> <span>&#128172; 12</span></p></div>
+            </article>
+
+
+            <article class="post">
+                <p class="profile">🦁</p>
+                <p class="whopost">Francesco Niero <span class="unam">@fniero</span> <img src="images/verificato.png" class="ver" alt="ver"> <span class="ran">mod</span> 3g</p>
+                <p class="postbody">Vogliamo parlare di quelli che usano i percorsi assoluti? Dovrebbero dargli l'ergastolo! <span class="hashtag">#PERCORSIASSOLUTI #STUDENTI</span></p>
+                <div><p><span id="paLik" onclick="paLike()">&#9825; 12461</span> <span>&#128172; 34</span></p></div>
+            </article>
+
+
+            <article class="post">
+                <p class="profile">🐍</p>
+                <p class="whopost">Nicola Bernardi <span class="unam">@nbernardi</span> <img src="images/verificato.png" class="ver" alt="ver"> <span class="ran">admin</span> 6g</p>
+                <p class="postbody">Forse è la volta buona che esca l'HTML 6! <span class="hashtag">#HTML6</span></p>
+                <div><p><span id="niLik" onclick="niLike()">&#9825; 9445</span> <span>&#128172; 31</span></p></div>
+            </article>
+
+
+            <article class="post" style="width: 60%;">
+                <p class="profile">🐍</p>
+                <p class="whopost">Nicola Bernardi <span class="unam">@nbernardi</span> <img src="images/verificato.png" class="ver" alt="ver"> <span class="ran">admin</span> 12g <span style="font-weight:300;">Edited</span></p>
+                <p class="postbody">Aiuto: JavaScript in un <span style="font-style:italic;">document.getElementById()</span> mi da: 'TypeError: null is not an object at'. AGGIORNAMENTO: Risolto, non mi ero accorto che l'oggetto che stavo chiamando non aveva un ID ma una classe. <span class="hashtag">#JavaScript</span></p>
+                <div><p><span id="heLik" onclick="heLike()">&#9825; 1014</span> <span>&#128172; 99</span></p></div>
+            </article>
+
+
+            <article class="post">
+                <p class="profile">😀</p>
+                <p class="whopost">Mario Verdi <span class="unam">@pippoplutotopolino</span>  <span class="ran">standard user</span> 16g</p>
+                <p class="postbody">Finalmente, dopo 45 minuti, sono riuscito a centrare un DIV!!🥳 <span class="hashtag">#div #css</span></p>
+                <div><p><span id="divLik" onclick="divLike()">&#9825; 1241</span> <span>&#128172; 65</span></p></div>
+            </article>
+
+
+            <article class="post">
+                <p class="profile">🤑</p>
+                <p class="whopost">Fabio Michieletto <span class="unam">@ilveromich</span> <img src="images/verificato.png" class="ver" alt="ver"> <span class="ran">mod</span> 1m</p>
+                <p class="postbody">C'è ancora gente che confonde il <span class="hashtag">#Java</span> con il <span class="hashtag">#JavaScript</span>. <span class="hashtag">@fniero</span> cosa ne pensi?</p>
+                <div><p><span id="micLik" onclick="micLike()">&#9825; 21049</span> <span>&#128172; 92</span></p></div>
+            </article>
+
+
+            
+        </section>
+        <footer>
+            <p>TPSIT.com, il miglior forum per gli appassionati di programmazione</p>
+            <p id="foo" style="color:white;">TPSIT.com. Tutti i diritti riservati</p>
+        </footer>
+    </body>
+</html>

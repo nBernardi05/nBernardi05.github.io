@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>Sign in - TPsit.com</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Nicola Bernardi">
+        <meta name="description" content="prova">
+        <link rel="stylesheet" href="../css/main.css">
+        <script src="../js/main.js"></script>
+        <style id="stile">
+            .hid {
+                display: none;
+            }
+            *{
+                background-color: #052134;
+                color:white;
+            }
+        </style>
+    </head>
+    <body onload="">
+        <h1>
+            TPsit-com
+        </h1>
+        <h4 id="logged"></h4>
+        <section id="reg">
+                <label for="realname">Nome e cognome:</label>
+                <input type="text" id="realname" required>
+                <label for="usr">Username: </label>
+                <input type="text" id="usr" required>
+                <label for="pass">Password: </label>
+                <input type="password" id="pass" required>
+                <label for="pass2">Conferma Password: </label>
+                <input type="password" id="pass2" required>
+                <button onclick="reg()">Registrati</button>
+                <h3 id="err"></h3>
+                <a href="login.html">Already signed?</a>
+        </section>
+        <article class="hid">
+            <button onclick="logout()">Logout</button>
+        </article>
+    </body>
+</html>
